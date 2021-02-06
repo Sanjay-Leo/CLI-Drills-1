@@ -53,7 +53,7 @@
 * tail -n10 voldemort.txt
 
 
-# Word Occurance
+**Word Occurance**
 
 * grep -o -i 'harry' voldemort.txt | wc -l
 
@@ -69,7 +69,7 @@
 * tr ':;,?!\"' ' ' < voldemort.txt | tr -s ' ' '\n' | awk '!a[$0]++{c++} END{print c}'
 
 
-# Process,Ports
+**Process,Ports**
 
 * pgrep Google Chrome          (9435,9447,9453, ...)
 
@@ -82,7 +82,7 @@
 * python -m http.server 8000
 
 
-# to stop process of local host
+**to stop process of local host**
 
 * sudo lsof -iTCP:8000 -sTCP:LISTEN      (after getting process-id PID)
 
@@ -95,7 +95,7 @@
 * sudo ss -lptn 'sport = :5432'
 
 
-# Managing Software        (for mac only not for linux)
+**Managing Software**       (for mac only not for linux)
 
 * brew install htop
 
@@ -105,7 +105,7 @@
 
 * brew remove nginx
 
-# MISC
+**MISC**
 
 * curl ifconfig.me        (157.41.53.172)
 
