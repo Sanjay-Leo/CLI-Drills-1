@@ -71,9 +71,9 @@
 
 **Process,Ports**
 
-* pgrep Google Chrome          (9435,9447,9453, ...)
+* pgrep Google Chrome          
 
-* echo $PPID                   (8962)
+* echo $PPID                   
 
 * kill <pid>
   
@@ -107,14 +107,14 @@ _(to stop process of local host)_
 
 **MISC**
 
-* curl ifconfig.me        (157.41.53.172)
+* curl ifconfig.me        
 
-* nslookup google.com     (172.217.26.174)
+* nslookup google.com     
 
 * ping -c 10 google.com  or  PING google.com
 
-* brew search node           (for mac only not for linux)
+* brew search node           
 
-* brew search code           (for mac only not for linux
+* brew search code           
  
  
