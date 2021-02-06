@@ -1,4 +1,4 @@
-# CLI-Drills-1
+# CLI Drills-1
 **Mountbluee CLI Drills 1**
 
 
@@ -43,7 +43,7 @@
 
 
 
-# CLI-Drills 2
+# CLI Drills 2
 
 
 * curl -o voldemort.txt https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
