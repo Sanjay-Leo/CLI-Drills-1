@@ -1,30 +1,30 @@
 # CLI-Drills-1
-Mountblue CLI Drills 1
+**Mountblue CLI Drills 1**
 
 
 
 
- mkdir -p hello/{five/six/seven,one/two/three/four}
+* mkdir -p hello/{five/six/seven,one/two/three/four}
  
- touch hello/five/six/{c.txt,seven/error.log}
+* touch hello/five/six/{c.txt,seven/error.log}
  
- touch hello/one/{a.txt,b.txt,two/{d.txt,three/{e.txt,four/access.log}}}
+* touch hello/one/{a.txt,b.txt,two/{d.txt,three/{e.txt,four/access.log}}}
  
- tree
+* tree
  
- find . -iname '*.log' -type f -delete
+* find . -iname '*.log' -type f -delete
  
- open hello/one/a.txt
+* open hello/one/a.txt
  
- rm -r hello/five
+* rm -r hello/five
  
- mv hello/one/a.txt hello/one/two
+* mv hello/one/a.txt hello/one/two
  
- cd hello
+* cd hello
  
- mv one uno
+* mv one uno
  
- tree
+* tree
 
 
 
@@ -46,75 +46,75 @@ Mountblue CLI Drills 1
 # CLI-Drills 2
 
 
-curl -o voldemort.txt https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+* curl -o voldemort.txt https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
 
-head -n3 voldemort.txt
+* head -n3 voldemort.txt
 
-tail -n10 voldemort.txt
+* tail -n10 voldemort.txt
 
 
 # Word Occurance
 
-grep -o -i 'harry' voldemort.txt | wc -l
+* grep -o -i 'harry' voldemort.txt | wc -l
 
-grep -o -i 'ron' voldemort.txt | wc -l
+* grep -o -i 'ron' voldemort.txt | wc -l
 
-grep -o -i 'hermione' voldemort.txt | wc -l
+* grep -o -i 'hermione' voldemort.txt | wc -l
 
-grep -o -i 'Dumbledore' voldemort.txt | wc -l
+* grep -o -i 'Dumbledore' voldemort.txt | wc -l
 
 
-sed -n -e '100,200p' voldemort.txt
+* sed -n -e '100,200p' voldemort.txt
 
-tr ':;,?!\"' ' ' < voldemort.txt | tr -s ' ' '\n' | awk '!a[$0]++{c++} END{print c}'
+* tr ':;,?!\"' ' ' < voldemort.txt | tr -s ' ' '\n' | awk '!a[$0]++{c++} END{print c}'
 
 
 # Process,Ports
 
-pgrep Google Chrome          (9435,9447,9453, ...)
+* pgrep Google Chrome          (9435,9447,9453, ...)
 
-echo $PPID                   (8962)
+* echo $PPID                   (8962)
 
-kill <pid>
+* kill <pid>
   
-ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 3          (both memory & CPU usage)
+* ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 3          (both memory & CPU usage)
 
-python -m http.server 8000
+* python -m http.server 8000
 
 
 # to stop process of local host
 
-sudo lsof -iTCP:8000 -sTCP:LISTEN      (after getting process-id PID)
+* sudo lsof -iTCP:8000 -sTCP:LISTEN      (after getting process-id PID)
 
-kill <pid>
+* kill <pid>
 
-sudo python -m http.server 90          (port below 1024 require root privileges)
+* sudo python -m http.server 90          (port below 1024 require root privileges)
 
-sudo watch netstat -tulpn  sudo watch ss -tulpn
+* sudo watch netstat -tulpn  sudo watch ss -tulpn
 
-sudo ss -lptn 'sport = :5432'
+* sudo ss -lptn 'sport = :5432'
 
 
 # Managing Software        (for mac only not for linux)
 
-brew install htop
+* brew install htop
 
-brew install vim
+* brew install vim
 
-brew install nginx
+* brew install nginx
 
-brew remove nginx
+* brew remove nginx
 
 # MISC
 
-curl ifconfig.me        (157.41.53.172)
+* curl ifconfig.me        (157.41.53.172)
 
-nslookup google.com     (172.217.26.174)
+* nslookup google.com     (172.217.26.174)
 
-ping -c 10 google.com  or  PING google.com
+* ping -c 10 google.com  or  PING google.com
 
-brew search node           (for mac only not for linux)
+* brew search node           (for mac only not for linux)
 
-brew search code           (for mac only not for linux
+* brew search code           (for mac only not for linux
  
  
