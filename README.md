@@ -82,7 +82,7 @@
 * python -m http.server 8000
 
 
-**to stop process of local host**
+_(to stop process of local host)_
 
 * sudo lsof -iTCP:8000 -sTCP:LISTEN      (after getting process-id PID)
 
