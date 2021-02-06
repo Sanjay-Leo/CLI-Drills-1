@@ -75,7 +75,7 @@
 
 * echo $PPID                   
 
-* kill <pid>
+* kill <pid>   (enter pid number)
   
 * ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 3          (both memory & CPU usage)
 
@@ -86,7 +86,7 @@ _(to stop process of local host)_
 
 * sudo lsof -iTCP:8000 -sTCP:LISTEN      (after getting process-id PID)
 
-* kill <pid>
+* kill <pid>  (enter pid number)
 
 * sudo python -m http.server 90          (port below 1024 require root privileges)
 
